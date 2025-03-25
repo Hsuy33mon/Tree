@@ -1,0 +1,30 @@
+package Tree;
+
+public class TreeNode {
+	
+	int value ;
+	TreeNode left ;
+	TreeNode right;
+	TreeNode root;
+	
+	public TreeNode(int value) {
+		this.value = value;
+		this.left = null;
+		this.right = null;
+		
+	}
+	
+	public static void printTree(TreeNode node) {
+		if(node==null) {
+			return;
+		}
+		System.out.print(node.value);
+//		System.out.println(" ");
+//		System.out.println("|");
+		printTree(node.left);
+//		System.out.println("|");
+		printTree(node.right);
+//		System.out.println("|");
+	}
+
+}

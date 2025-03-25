@@ -1,0 +1,14 @@
+package OperationOnTree;
+
+import Tree.TreeNode;
+
+public class InsertNode {
+	
+	public static void main(String[] args) {
+		TreeNode root = new TreeNode(1);
+		root.left = new TreeNode(2);
+		
+		
+	}
+
+}
