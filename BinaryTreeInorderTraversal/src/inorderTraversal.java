@@ -10,14 +10,13 @@ public class inorderTraversal {
         return ans;
     }
 
-    public List<Integer> inorderHelper(TreeNode node){
+    public void inorderHelper(TreeNode node){
         if(node == null){
-            return null;
+            return;
         }
         inorderHelper(node.left);
         ans.add(node.val);
         inorderHelper(node.right);
-        return ans;
     }
-    
+
 }
